@@ -10,4 +10,4 @@ RUN set -x \
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT java -jar sentinel-dashboard-${SENTIENL_VERSION}.jar --server.port=${SERVER_PORT} --sentinel.dashboard.auth.username=${SENTINEL_DASHBOARD_USERNAME} --sentinel.dashboard.auth.password=${SENTINEL_DASHBOARD_PASSWORD}
+ENTRYPOINT java -jar sentinel-dashboard-${SENTIENL_VERSION}.jar --server.port=${SERVER_PORT} --auth.username=${SENTINEL_DASHBOARD_USERNAME} --auth.password=${SENTINEL_DASHBOARD_PASSWORD}
